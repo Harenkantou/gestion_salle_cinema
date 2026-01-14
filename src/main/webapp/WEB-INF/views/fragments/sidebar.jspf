@@ -1,0 +1,12 @@
+<aside id="sidebar" class="sidebar bg-light">
+  <div class="sidebar-header p-3 text-center border-bottom">
+    <h5>CinemaApp</h5>
+  </div>
+  <ul class="nav flex-column p-2">
+    <li class="nav-item"><a class="nav-link" href="/">Accueil</a></li>
+    <li class="nav-item"><a class="nav-link" href="/seances/liste-seances">Séances</a></li>
+    <li class="nav-item"><a class="nav-link" href="/films">Films</a></li>
+    <li class="nav-item"><a class="nav-link" href="/billets/list">Mes Billets</a></li>
+    <li class="nav-item"><a class="nav-link" href="/login">Connexion</a></li>
+  </ul>
+</aside>

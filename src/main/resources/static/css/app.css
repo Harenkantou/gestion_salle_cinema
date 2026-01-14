@@ -1,0 +1,12 @@
+/* Basic app styles and sidebar layout */
+body { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #f8f9fa; }
+.sidebar { width: 220px; min-height: 100vh; position: sticky; top: 0; }
+.sidebar .nav-link { color: #333; }
+.sidebar .nav-link:hover { background: rgba(0,0,0,0.03); border-radius: 4px; }
+.hero { box-shadow: 0 6px 18px rgba(13,110,253,0.12); }
+.card { border: none; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar { display: none; }
+}
