@@ -1,0 +1,3 @@
+Dans pom.xml napiako an ilay pakaging war satria tsy mandeha raha tsy misy an io
+
+D le base de données 
