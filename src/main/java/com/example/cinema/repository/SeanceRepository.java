@@ -4,6 +4,7 @@ package com.example.cinema.repository;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -17,4 +18,10 @@ public interface SeanceRepository extends JpaRepository<Seance, Long> {
 
     // Vérifier si une salle a déjà une séance à cette date et heure
     Optional<Seance> findBySalleAndDateSeanceAndHeureDebut(Salle salle, LocalDate date, LocalTime heure);
+    
+    // Trouver toutes les séances d'une salle à une date donnée
+    List<Seance> findBySalleAndDateSeance(Salle salle, LocalDate dateSeance);
+    
+    // Trouver les séances d'une salle entre deux dates
+    List<Seance> findBySalleAndDateSeanceBetween(Salle salle, LocalDate dateDebut, LocalDate dateFin);
 }

@@ -1,27 +1,47 @@
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\controller\FilmController.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\Application.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\repository\ClientRepository.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\repository\SeanceRepository.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\repository\FilmRepository.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\controller\BilletController.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\model\Seance.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\model\Film.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\model\Billet.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\model\Salle.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\service\FilmService.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\service\GenreService.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\controller\AuthController.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\model\Client.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\service\BilletService.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\controller\HomeController.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\service\PlaceService.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\repository\PlaceRepository.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\repository\SalleRepository.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\service\SalleService.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\service\SeanceService.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\repository\GenreRepository.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\model\Genre.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\controller\SeanceController.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\repository\BilletRepository.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\service\ClientService.java
-D:\S5\Mme Baovola\Baovola - Copie\gestion_cinema\src\main\java\com\example\cinema\model\Place.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/service/PaiementSocieteService.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/repository/SalleRepository.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/service/ClientService.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/service/RevenuService.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/model/PaiementSociete.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/model/Salle.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/model/Place.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/service/PlaceService.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/controller/AuthController.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/repository/PaiementSocieteRepository.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/controller/HomeController.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/service/DiffusionSeanceService.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/controller/SalleController.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/controller/RevenuController.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/service/PropDiffusionService.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/dto/RevenuDTO.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/dto/PaiementDTO.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/repository/TypePlaceRepository.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/model/Seance.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/model/Billet.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/Application.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/model/PropDiffusion.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/repository/PlaceRepository.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/repository/DiffusionSeanceRepository.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/service/GenreService.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/repository/SeanceRepository.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/controller/BilletController.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/service/TypeBilletService.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/model/TypeBillet.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/repository/ClientRepository.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/model/TypePlace.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/service/SalleService.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/model/DiffusionSeance.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/model/Genre.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/controller/PaiementController.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/controller/FilmController.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/service/FilmService.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/repository/BilletRepository.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/controller/SeanceController.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/repository/TypeBilletRepository.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/service/SeanceService.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/repository/FilmRepository.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/model/Client.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/service/BilletService.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/repository/PropDiffusionRepository.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/repository/GenreRepository.java
+/home/toky/toky/java/gestion_cinema_farany/gestion_cinema/gestion_cinema/src/main/java/com/example/cinema/model/Film.java

@@ -1,7 +1,15 @@
 package com.example.cinema.model;
 
-import jakarta.persistence.*;
 import java.time.LocalDateTime;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "billet")
@@ -29,8 +37,14 @@ public class Billet {
     private Double prix;
 
      @ManyToOne
+    @JoinColumn(name = "id_type_billet")
+    private TypeBillet typeBillet;
+
+    @ManyToOne
     @JoinColumn(name = "id_place", nullable = false)
     private Place place;
+
+    
 
     public Place getPlace() {
         return place;
@@ -56,4 +70,7 @@ public class Billet {
 
     public Double getPrix() { return prix; }
     public void setPrix(Double prix) { this.prix = prix; }
+
+    public TypeBillet getTypeBillet() { return typeBillet; }
+    public void setTypeBillet(TypeBillet typeBillet) { this.typeBillet = typeBillet; }
 }

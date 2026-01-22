@@ -1,0 +1,47 @@
+J-1:
+On doit suivre ces règles de gestion: 
+-Il y a plusieurs salles de cinema
+-Chaque salle de cinema a sa capacité
+-Un film peut être diffusé parallèlement dans plusieurs salles
+-Un film peut être diffusé plusieurs fois pzr dans la journée
+-Un film peut être diffusé sur plusieurs jours
+et voici la fonctionnalité à faire: 
+Un client veut acheter des places pour regarder Avatar pour le 10Janvier à 10h
+
+
+Alea j-1: 
+Chiffre d'affaire à faire
+
+J2:
+Règles de gestion:
+-Une salle possède des places premium et des places standards
+-Une place premium coute 50 000Ar et une place standard coute 20 000Ar
+Fonctinnalités:
+Donnez la valeur maximale qu'une salle peut générer pour une diffusion de film
+
+***Alea J2:
+Ajout d'un nouveau type de place VIP
+VIP :180 000Ar
+Premium: 140 000Ar
+Standard: 80 000Ar
+
+J3:
+-Le gérant a donné une remise pour les enfants qui choisissent les places standards par conséquents le prix pour enfant est de 15 000Ar au lieu de 20 000Ar ce n'est pas une remise aussi
+-Ce n'est pas le type de place qui est attribué pour enfants
+-On peut faire cela au moment du paiement 
+
+Fonctionnalités:
+Calculer le CA généré par la salle pour une diffusion de film (jeu de données libre avec enfant)
+
+Alea
+Le tarif enfant est maintenant 50% moins chèr que le tarif adulte
+
+Données à insérer
+| Type place | Enfant (nb) | Ado (nb / prix) | Adulte (nb / prix) |
+| ---------- | ----------- | --------------- | ------------------ |
+| VIP        | 2           | 10 / 45 000     | 5 / 50 000         |
+| Premium    | 4           | 10 / 30 000     | 10 / 40 000        |
+| Standard   | 10          | 20 / 20 000     | 20 / 30 000        |
+
+
+peux-tu utiliser cette nouvelle conception pour une meilleure flexibilité de l'application svp, adapter avec cette nouvelle conception les fonctionnalités svp?

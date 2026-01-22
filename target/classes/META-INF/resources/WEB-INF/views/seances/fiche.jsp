@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fiche des Séances</title>
+    <title>Détail de la Séance</title>
    
 </head>
 <style>
@@ -28,83 +28,139 @@ h1 {
     color: #ff4d4d;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table, th, td {
-    border: 1px solid #ff4d4d;
-}
-
-th, td {
-    padding: 8px;
-    text-align: left;
-}
-
-a {
-    color: #ff4d4d;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-input, textarea, select, button {
-    display: block;
-    width: 100%;
-    margin: 5px 0 15px 0;
-    padding: 8px;
+.detail-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #550000;
+    border-left: 4px solid #ff4d4d;
     border-radius: 5px;
-    border: none;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.label {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.value {
+    color: #fff;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
 }
 
 button {
     background-color: #ff4d4d;
     color: white;
     cursor: pointer;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
 }
 
 button:hover {
     background-color: #e60000;
 }
+
+a {
+    color: #ff4d4d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.info-places {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
  
 </style>
 <body>
 <div class="container">
-    <h1>Fiche des Séances</h1>
+    <h1>Détail de la Séance</h1>
 
-    <!-- Liste des séances -->
-    <table>
-        <thead>
-        <tr>
-            <th>Film</th>
-            <th>Genre</th>
-            <th>Salle</th>
-            <th>Date</th>
-            <th>Heure</th>
-            <th>Prix (€)</th>
-            <th>Statut</th>
-        </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <a href="<c:url value='/films/fiche/${seance.film.idFilm}' />">
-                        ${seance.film.titre}
-                    </a>
-                </td>
-                <td>${seance.film.genre.nomGenre}</td>
-                <td>${seance.salle.nomSalle} (capacité: ${seance.salle.capacite})</td>
-                <td>${seance.dateSeance}</td>
-                <td>${seance.heureDebut}</td>
-                <td>${seance.prix}</td>
-                <td>${seance.statut ? 'Programmé' : 'Annulé'}</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="detail-section">
+        <div class="detail-row">
+            <span class="label">Film:</span>
+            <span class="value">
+                <a href="<c:url value='/films/fiche/${seance.film.idFilm}' />">
+                    ${seance.film.titre}
+                </a>
+            </span>
+        </div>
+        
+        <div class="detail-row">
+            <span class="label">Genre:</span>
+            <span class="value">${seance.film.genre.nomGenre}</span>
+        </div>
+
+        <div class="detail-row">
+            <span class="label">Durée:</span>
+            <span class="value">${seance.film.dureeMinutes} minutes</span>
+        </div>
+    </div>
+
+    <div class="detail-section">
+        <div class="detail-row">
+            <span class="label">Salle:</span>
+            <span class="value">${seance.salle.nomSalle}</span>
+        </div>
+
+        <div class="detail-row">
+            <span class="label">Capacité:</span>
+            <span class="value">${seance.salle.capacite} places</span>
+        </div>
+
+        <div class="detail-row">
+            <span class="label">Date:</span>
+            <span class="value">${seance.dateSeance}</span>
+        </div>
+
+        <div class="detail-row">
+            <span class="label">Heure:</span>
+            <span class="value">${seance.heureDebut}</span>
+        </div>
+
+        <div class="detail-row">
+            <span class="label">Prix:</span>
+            <span class="value">${seance.prix} €</span>
+        </div>
+
+        <div class="detail-row">
+            <span class="label">Statut:</span>
+            <span class="value">${seance.statut ? 'Programmée' : 'Annulée'}</span>
+        </div>
+    </div>
+
+    <c:if test="${seance.statut}">
+        <div class="actions">
+            <form action="<c:url value='/billets/reserver/${seance.idSeance}' />" method="get" style="display:inline;">
+                <button type="submit">Réserver des places</button>
+            </form>
+        </div>
+    </c:if>
+
+    <div class="actions">
+        <a href="<c:url value='/seances/liste-seances' />">Retour à la liste des séances</a>
+    </div>
 </div>
 </body>
 </html>

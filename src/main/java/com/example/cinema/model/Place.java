@@ -1,6 +1,14 @@
 package com.example.cinema.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 
 @Entity
 @Table(name = "place",
@@ -21,6 +29,10 @@ public class Place {
     @JoinColumn(name = "id_salle", nullable = false)
     private Salle salle;
 
+    @ManyToOne
+    @JoinColumn(name = "id_type_place", nullable = false)
+    private TypePlace typePlace;
+
     // Getters & Setters
     public Long getIdPlace() { return idPlace; }
     public void setIdPlace(Long idPlace) { this.idPlace = idPlace; }
@@ -33,4 +45,7 @@ public class Place {
 
     public Salle getSalle() { return salle; }
     public void setSalle(Salle salle) { this.salle = salle; }
+
+    public TypePlace getTypePlace() { return typePlace; }
+    public void setTypePlace(TypePlace typePlace) { this.typePlace = typePlace; }
 }

@@ -46,6 +46,24 @@
                 <div class="col-md-4">
                     <div class="card shadow-sm">
                         <div class="card-body">
+                            <h5 class="card-title">Gestion des salles</h5>
+                            <p class="card-text">Consultez les salles et le revenu maximum qu'elles peuvent générer.</p>
+                            <a href="/salles/list" class="btn btn-primary">Voir les salles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Chiffre d'affaires</h5>
+                            <p class="card-text">Visualisez le chiffre d'affaires total avec filtre par date.</p>
+                            <a href="/seances/chiffre-affaires" class="btn btn-success">Voir le CA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
                             <h5 class="card-title">Mon compte</h5>
                             <p class="card-text">Accedez a vos reservations et informations personnelles.</p>
                             <a href="/login" class="btn btn-primary">Se connecter</a>
@@ -60,7 +78,6 @@
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-// small script to toggle sidebar on small screens (optional)
 document.addEventListener('DOMContentLoaded', function(){
   // future enhancements
 });
